@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+.blog-content h1 {
+  @apply text-4xl font-bold mb-6 text-slate-800 leading-tight;
+}
+
+.blog-content h2 {
+  @apply text-3xl font-semibold mb-4 text-slate-700 leading-tight;
+}
+
+.blog-content h3 {
+  @apply text-2xl font-medium mb-3 text-slate-700;
+}
+
+.blog-content p {
+  @apply text-lg mb-4 text-slate-600 leading-relaxed;
+}
+
+.blog-content ul {
+  @apply list-disc list-inside mb-4 text-slate-600;
+}
+
+.blog-content ol {
+  @apply list-decimal list-inside mb-4 text-slate-600;
+}
+
+.blog-content li {
+  @apply mb-2;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic text-slate-600 mb-4 bg-blue-50 py-2;
+}
+
+.blog-content img {
+  @apply rounded-lg shadow-md mb-4 w-full h-auto;
+}
+
+.blog-content a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  @apply transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.glassmorphism {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
